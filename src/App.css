@@ -1,0 +1,63 @@
+.main{
+  
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column ;
+  padding: 10px ;
+}
+#Vanshika {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+span{
+  background: linear-gradient(to right,rgb(255, 0, 212)
+  ,rgb(0, 221, 255));
+  font-size: 2vmax;
+  background-clip: text;
+  color: transparent;
+}
+button {
+  background: #0ff;
+  color: #000;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 2px 2px 50px rgb(79 224 234);
+}
+
+button:hover {
+  background: #09f;
+  color: white;
+}
+#speak{
+  width: 100px;
+  height: auto;
+}
+p{
+  color: white;
+  font-size: 1.3vmax;
+  text-align: center;
+  padding: 0px 40px;
+  
+}
+.response{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+}#aigif{
+  width: 50vh;
+  height: 100px;
+}
