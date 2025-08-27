@@ -37,20 +37,30 @@ setPrompt(transcript);
 takeCommand(transcript.toLowerCase());
   }
   function takeCommand(command){
-if(command.includes("open")&& command.includes("YouTube")){
-    window.open("https://www.youtube.com","_blank")
-    speak("Opening Youtube")
-    setPrompt("Opening Youtube")
-    setTimeout(() => {
-        setSpeaking(false)
-    }, 5000);
-  }
+if (command.includes("open") && command.includes("youtube")) {
+  window.open("https://www.youtube.com", "_blank");
+  speak("Opening Youtube");
+  setPrompt("Opening Youtube");
+  setTimeout(() => {
+    setSpeaking(false);
+  }, 5000);
+}
   else if(command.includes("date")){
     let date =new Date().toLocaleString(undefined,
         {day:"numeric",month:"short",year:"numeric"})
  speak(date)
  setPrompt(`Today's date is ${date}`);
   }
+  else if
+     (command.includes("open") && command.includes("google")) {
+  window.open("https://www.google.com", "_blank");
+  speak("Opening Google");
+  setPrompt("Opening Google");
+  setTimeout(() => {
+    setSpeaking(false);
+  }, 5000);
+}
+  
   else if(command.includes("time")){
 let time=new Date().toLocaleString(undefined,
 {hour:"numeric",minute:"numeric",second:"numeric",hour12:true})

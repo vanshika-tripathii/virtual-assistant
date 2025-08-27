@@ -33,6 +33,7 @@ button {
   align-items: center;
   gap: 10px;
   box-shadow: 2px 2px 50px rgb(79 224 234);
+ 
 }
 
 button:hover {
