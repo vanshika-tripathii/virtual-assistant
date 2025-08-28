@@ -60,13 +60,42 @@ if (command.includes("open") && command.includes("youtube")) {
     setSpeaking(false);
   }, 5000);
 }
-  
+else if
+     (command.includes("open") && command.includes("leetcode")) {
+  window.open("https://leetcode.com/u/vanshikatripathii/", "_blank");
+  speak("Opening leetcode");
+  setPrompt("Opening Leetcode");
+  setTimeout(() => {
+    setSpeaking(false);
+  }, 5000);
+}
+else if (
+    command.includes("birthday") ||
+    command.includes("bday") ||
+    command.includes("birth day")
+  ) {
+    let bday = "Vanshika's birthday is on 27th January 2004.";
+    speak(bday);
+    setPrompt(bday);
+    setTimeout(() => {
+      setSpeaking(false);
+    }, 6000);
+  } 
   else if(command.includes("time")){
 let time=new Date().toLocaleString(undefined,
 {hour:"numeric",minute:"numeric",second:"numeric",hour12:true})
 speak(time)
 setPrompt(`The time is ${time}`); 
   }
+  else if(command.includes("who are you") || command.includes("what can you do")){
+    let intro = "I am Vanshika, your personal AI assistant. I can help you with various tasks such as opening websites, telling the date and time, and answering your questions using Google Gemini.";
+    speak(intro);
+    setPrompt(intro);
+    setTimeout(() => {
+      setSpeaking(false);
+    }, 8000);
+  }
+
 
   else{
     aiResponse(command)
